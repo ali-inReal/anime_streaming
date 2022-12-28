@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  body{
+    background-color: rgb(62, 62, 62) !important;
+  }
+.nav-link{
+    color: white !important;
+}
+
+  .nav-link:hover{
+    color: rgb(102, 42, 181) !important;
+  }
+

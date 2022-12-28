@@ -1,0 +1,15 @@
+.popular-container{
+    background-color: rgb(62, 62, 62);
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.popular-heading{
+   text-align: center;
+   margin-top: 4rem;
+}
