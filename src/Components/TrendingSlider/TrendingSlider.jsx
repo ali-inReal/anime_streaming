@@ -7,6 +7,12 @@ import 'swiper/css/pagination';
 import {carousel} from "../../data/carousel.js"
 export default function TrendingSlider() {
   return (
+    <div
+     style={{
+      borderBottom:"2px solid #6DE5F2",
+      padding:"1rem",
+     }}
+    >
     <Swiper
     modules={[ Pagination]}
     slidesPerView={1}
@@ -45,5 +51,6 @@ export default function TrendingSlider() {
         }
     
     </Swiper>
+    </div>
   )
 }

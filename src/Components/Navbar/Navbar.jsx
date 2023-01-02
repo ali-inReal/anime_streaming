@@ -1,36 +1,46 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 function NavigationBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg"
+      style={{
+        backgroundColor: "#0477BF !imporant"
+      }}
+    >
       <Container>
         <Navbar.Brand href="#home">LOGO</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#pricing">Popular</Nav.Link>
-            <Nav.Link href="#pricing">Genre</Nav.Link>
-            {/* <NavDropdown title="Genre" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
+          <Nav
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: "1rem"
+            }}
+            className="me-auto">
+            <Link className="link"
+              to='/'>Home</Link>
+            <Link
+              className="link"
+              to="/">Popular</Link>
+            {/* <Nav.Link href="#pricing">Genre</Nav.Link> */}
           </Nav>
-          <Nav>
-            <Nav.Link href="#deets">Login</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+          <Nav
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: "1rem"
+          }}
+          >
+            <Link className="link" to="/login">Login</Link>
+            <Link to="/" className='link'>
               Sign Up
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

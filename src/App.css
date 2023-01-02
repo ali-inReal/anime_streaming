@@ -1,16 +1,25 @@
 *{
     margin: 0;
     padding: 0;
-    color: white;
+    color: #6DE5F2;
   }
   body{
-    background-color: rgb(62, 62, 62) !important;
+    background-color: #023859 !important;
   }
 .nav-link{
-    color: white !important;
+    color: #023859 !important;
 }
 
   .nav-link:hover{
     color: rgb(102, 42, 181) !important;
   }
 
+.navbar{
+  background-color: #6DE5F2 !important;
+}
+
+.link{
+  text-decoration: none;
+  list-style:none;
+  color: #023859;
+}

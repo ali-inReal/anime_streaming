@@ -1,14 +1,14 @@
 .slide{
     height: 50vh;
     padding-bottom: 3rem;
-    background-color: rgb(62, 62, 62);
+    background-color: #023859;
 }
 
 
 .trending-card{
     width: 100vw;
     height: 50vh;
-    background-color: rgb(62, 62, 62);
+    background-color: #023859;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -30,23 +30,26 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    
+}
+.trending-card-image img{
+    border-radius: 20px;
 }
 
 .trending-card-button{
-    background-color: white;
-    color: black;
+    background-color: #6DE5F2;
+    color: #023859;
     padding: 1rem 3rem;
     outline: none;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 20px;
     font-weight: 700;
 }
 
 .trending-card-button:hover{
-    background-color: rgb(102, 42, 181);
-    color: white;
+    background-color: #023859;
+    color: #6DE5F2;
     transition: all 0.3s ease-in;
+    border: 2px solid black;
 }
 
 @media screen and (max-width:706px) {
