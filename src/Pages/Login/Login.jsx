@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Login.css"
 import logo from "./../../assets/logo.png"
+import { Link } from 'react-router-dom';
 function Login(props) {
     return (
         <div className='login-container' >
@@ -14,7 +15,7 @@ function Login(props) {
 
                 </div>
                </buton>
-               <p>Not a Member? Register Now</p>
+               <Link to={'/signup'}>Not a Member? Register Now</Link>
             </div>
         </div>
     );
