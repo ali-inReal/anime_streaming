@@ -1,0 +1,41 @@
+.details-conainer{
+    width: 100vw;
+    height: 100vh;
+}
+.details-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.details-image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.details-text{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 2rem;
+}
+
+.genre-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.genre-item{
+    font-size: 14px;
+    margin: 0;
+    background-color: #6DE5F2;
+    padding: 5px 16px;
+    color:#0477BF;
+    border-radius: 20px;
+}

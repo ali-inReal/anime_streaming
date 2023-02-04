@@ -1,9 +1,12 @@
+import { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
-
+import { UserContext } from '../../Context';
 function NavigationBar() {
+  const loginData = useContext(UserContext);
+  const {login,setLogin,admin,setAdmin} = loginData
   return (
     <Navbar collapseOnSelect expand="lg"
       style={{
@@ -26,22 +29,35 @@ function NavigationBar() {
               to='/'>Home</Link>
             <Link
               className="link"
-              to="/">Popular</Link>
+              to="/popular">Popular</Link>
+                <Link
+              className="link" style={{
+                display:"flex",
+                alignItems:"center",
+                justifyContent:"center"
+              }}
+              to="/search">Search</Link>
+              {admin!==""?<Link
+              className="link" style={{
+                display:"flex",
+                alignItems:"center",
+                justifyContent:"center"
+              }}
+              to="/admin">Admin</Link>:""}
             {/* <Nav.Link href="#pricing">Genre</Nav.Link> */}
           </Nav>
           <Nav
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: "1rem"
-          }}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: "1rem"
+            }}
           >
-            <Link className="link" to="/login">Login</Link>
-            <Link to="/" className='link'>
-              Sign Up
-            </Link>
+
+            <Link className="link" onClick={()=>{setLogin("")}} to="/login">Logout</Link>
           </Nav>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>

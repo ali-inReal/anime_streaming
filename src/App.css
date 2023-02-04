@@ -23,3 +23,19 @@
   list-style:none;
   color: #023859;
 }
+
+.pagination{
+  --bs-pagination-bg: transparent !important; 
+  --bs-pagination-active-color: transparent !important;
+  --bs-pagination-disabled-bg: transparent !important;
+  --bs-pagination-active-bg: #6DE5F2 !important;
+  --bs-pagination-focus-color: black !important;
+  --bs-pagination-active-color:#023859 !important;
+}
+.page-link .active{
+   color: inherit !important;
+}
+
+.ant-table-cell{
+  color: #023859 !important;
+}

@@ -1,10 +1,17 @@
 import React from "react"
 import { Button } from "react-bootstrap"
+import { useNavigate } from "react-router-dom";
 import "./AnimeCard.css"
 export default function AnimeCard(props) {
-    const desc = props.desc
+    const desc = props.desc;
+    const navigate = useNavigate();
+    function clickHandler()
+    {
+        console.log(props._id)
+        navigate('/details',{state:{id:props._id}});
+    }
     return (
-        <div style={{
+        <div onClick={()=>{clickHandler()}} style={{
             // position: "relative"
         }} className="anime-card">
             <img src={props.image} alt="Anime poster" />

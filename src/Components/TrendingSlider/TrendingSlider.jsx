@@ -39,7 +39,7 @@ export default function TrendingSlider() {
                            <p>
                            {summary}................................................
                            </p>
-                           <button className='trending-card-button'>Watch Now</button>
+                           <button className='trending-card-button'>Details</button>
                            </div>
                            
 
