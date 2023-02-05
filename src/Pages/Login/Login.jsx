@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Login.css"
 import logo from "./../../assets/logo.png"
 import { Link, useNavigate } from 'react-router-dom';
@@ -12,6 +12,12 @@ function Login(props) {
     const loginData = useContext(UserContext);
     const {login,setLogin,admin,setAdmin} = loginData
     const navigate = useNavigate();
+    
+    useEffect(
+        ()=>{
+             setLogin('');
+        },[]
+    )
 
     function submitHandler(e)
     {
